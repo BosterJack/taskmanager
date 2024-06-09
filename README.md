@@ -9,6 +9,51 @@ git clone https://github.com/BosterJack/taskmanager.git
 cd taskmanager
 ```
 
+2. **Install Dependencies**:
+
+```sh
+composer install
+```
+
+3. **Set Up Environment**:
+
+Copy the `.env.example` file to `.env` and configure your database credentials:
+
+```sh
+cp .env.example .env
+```
+
+4. **Generate Application Key**:
+
+```sh
+php artisan key:generate
+```
+
+5. **Run Migrations**:
+
+```sh
+php artisan migrate
+```
+
+6. **Serve the Application**:
+
+```sh
+php artisan serve
+```
+
+7. **Access the Application**:
+
+Visit `http://127.0.0.1:8000` in your browser.
+
+## Features
+
+- Create, edit, delete tasks
+- Reorder tasks with drag-and-drop functionality
+- Associate tasks with projects
+- Save task order in the database
+
+With these instructions, users should be able to set up and use the task manager application, along with understanding its key features.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
